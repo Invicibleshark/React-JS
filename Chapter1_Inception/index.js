@@ -29,5 +29,5 @@ React.createElement("h1",{id:"heading 21"},"This is Heading 1 from Child 2"),
 React.createElement("h1",{id:"heading 22"},"This is Heading 2 from the child 2")
 )
 )
-root.render(container1);
+root.render(container1); // Render Converts the object React Element to the heading element
 console.log(container1);
