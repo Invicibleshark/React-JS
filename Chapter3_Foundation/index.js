@@ -10,4 +10,19 @@ let Heading=React.createElement("h1",{},"this is a heading");
 const jsxHeading = (<h1> This is JSX Heading by Greek shark🦈</h1>); //() for multiple lines of code 
 
 // Render the JSX element into the root
-root.render(jsxHeading)
+//Heading 1 here is the React component which return rect element(jsx)
+let element=20;
+const Name=()=>
+{
+    return (
+    <h1> {element} {50*60} This Heading is from Other Component</h1>)    //React Element in Component
+};
+const Heading1=()=>{
+return (
+<div>
+    <Name/>
+    <h1> This is React Component</h1>
+</div>)
+};
+
+root.render(<Heading1/>)
