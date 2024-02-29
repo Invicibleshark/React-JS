@@ -1,0 +1,25 @@
+{
+  "name": "react-js",
+  "version": "1.0.0",
+  "description": "Keshav is Learning React JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Invicibleshark/React-JS.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Greek Shark",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Invicibleshark/React-JS/issues"
+  },
+  "homepage": "https://github.com/Invicibleshark/React-JS#readme",
+  "devDependencies": {
+    "parcel": "^2.11.0"
+  }
+}
