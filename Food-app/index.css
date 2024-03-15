@@ -87,3 +87,28 @@ body{
     box-shadow: 0 4px 6px rgba(221, 215, 215, 0.1);
     background-color:rgb(198, 109, 46);
 }
+.LoaderContainer{
+    padding: top 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.Loader{
+   height:350px;
+   width:270px;
+   background-color: rgb(185, 182, 182);
+   border-radius:10px;
+   margin:10px;
+   display:flex;
+   flex-direction: column;
+   justify-content:start;
+   align-items: center;
+}
+.ImageCont{
+    height:200px;
+   width:260px;
+   background-color: rgb(199, 195, 195);
+   border-radius:10px;
+   margin: 8px;
+}
