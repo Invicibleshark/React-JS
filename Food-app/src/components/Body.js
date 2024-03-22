@@ -10,9 +10,14 @@ const Body=()=>{
         const json=await data.json();
         console.log(json);
         setListofRestaurants(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+        setfilteredListofRestaurants(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+
     
     }
     let [ListofRestaurants,setListofRestaurants]=useState([]);
+    let [filteredListofRestaurants,setfilteredListofRestaurants]=useState([]);
+
+    let [inputtext,setinputtext]=useState();
     useEffect(()=>{
         fetchData();
     },[]);
@@ -22,7 +27,13 @@ const Body=()=>{
     return (ListofRestaurants.length ===0)?<Loader/>:(
         <div className="bodyContainer">
         <div className="Search">
-            <h1>This is Search</h1>
+            <input type="text" placeholder="Search Restaurants" value={inputtext} onChange={(e)=>{       //check Onchange Event Handler
+                setinputtext(e.target.value);
+            }}/>
+            <button onClick={()=>{
+                filteredrestaurants=ListofRestaurants.filter((i)=> i.info.name.toLowerCase().includes(inputtext.toLowerCase()));
+                setfilteredListofRestaurants(filteredrestaurants);
+            }}>Search</button>
             <button className="Btn" onClick={()=>{
                const filteredList = ListofRestaurants.filter((i) => i.info.avgRating >4);
                setListofRestaurants(filteredList);
@@ -31,7 +42,7 @@ const Body=()=>{
        
         <div className="Home">
             {
-              ListofRestaurants.map((i) => (
+              filteredListofRestaurants.map((i) => (
                 //Always pass id with map function
                 <Home key={i.info.id} resdata={i} />
             ))
