@@ -1,0 +1,231 @@
+#root{
+    align-items: center;
+    padding:4px;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    text-align: center;
+    padding: 5px;
+    background-color:white;
+    width:100%;
+    z-index:1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.nav-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.nav-items ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left:auto;
+    list-style: none;
+
+}
+ul li {
+margin:8px;
+}
+.res-img{
+    height:220px;
+    align-items: center;
+    border-radius: 16px;
+}
+.Home{
+    display: flex;
+    flex-direction: row;
+    justify-content:start;
+    flex-wrap: wrap;
+
+}
+.logo{
+    height:100px;
+}
+.Content{
+    overflow: hidden;
+}
+.Item1{
+    width:270px;
+    padding:5px;
+    margin:3px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    transition: transform 0.3s ease-in-out;
+    border-radius:16px;
+    /* Change text color */
+
+}
+.Link{
+    text-decoration:none;
+    color: #333; 
+}
+.Content:hover{
+    overflow:initial;
+}
+.Item1:hover{
+    cursor: pointer;
+    background-color: #f0f0f0;
+    transform: scale(1.1);
+    overflow: hidden;
+}
+.Content{
+    padding-left: 5px;
+}
+.Home{
+    margin:auto;
+}
+body{
+    height:100vh;
+    width:98vw;
+}
+.Btn{
+    border: 0px;
+    padding: 8px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+.Btn:hover{
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(221, 215, 215, 0.1);
+    background-color:rgb(198, 109, 46);
+}
+.LoaderContainer{
+    margin: top 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.Loader{
+   height:350px;
+   width:270px;
+   background-color: rgb(185, 182, 182);
+   border-radius:10px;
+   margin:10px;
+   display:flex;
+   flex-direction: column;
+   justify-content:start;
+   align-items: center;
+}
+.ImageCont{
+    height:200px;
+   width:260px;
+   background-color: rgb(199, 195, 195);
+   border-radius:10px;
+   margin: 8px;
+}
+.Login{
+    padding:0px 12px;
+    border:0px;
+    border-radius: 5px;
+}
+.Login:hover{
+    cursor: pointer;
+
+}
+.Searchinput{
+    color:red;
+}
+.Error{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.nav-items ul li Link{
+    text-decoration: none;
+}
+.Cusines{
+    list-style: none;
+}
+.RestaurantMenu{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.RestaurantDetails{
+    display: flex;
+    flex-direction:row;
+    align-items: start;
+    width:60vw;
+    border: 5px solid #f0f0f0;
+    border-radius: 5px;
+}
+.MenuDetails{
+    margin-left:80px;
+}
+.imageMenu{
+    margin-left: 8px;
+    height:180px;
+    width:180px;
+    border-radius: 10px;
+}
+.Menu{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    border:2px #f0f0f0 solid;
+    margin:8px;
+    padding:8px;
+    width:65vw;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.Menu:hover{
+    cursor: pointer;
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+    overflow: hidden;
+}
+.User {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none !important;
+    align-items: center;
+    gap:10px;
+    align-content: center;
+    margin: auto;
+    color:#333;
+    background-color:rgb(208, 161, 100);
+    padding: 20px;
+    border-radius: 20px;
+}
+.User div img{
+    border-radius: 50%;
+    gap:30px;
+}
+.User h4{
+    gap:10px;
+}
+.AboutContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:80vh;
+}
+.Pictures{
+    align-items: center;
+    padding-right: 10px;
+    color:#333;
+}
+span {
+    padding-bottom: 8px;
+    display: block;
+}
+.Aboutdata{
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+.User a{
+    text-decoration: none;
+}
