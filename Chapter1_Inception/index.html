@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+    <link rel="shortcut icon" href="https://cdn.freebiesupply.com/logos/large/2x/react-1-logo-black-and-white.png" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div id="Container1">
+    <h1>Top of the Root div</h1>
+</div>
+<!-- Container1 can't be effected the React  as it doesnt get involved in the React js -->
+<div id="root">
+    <p>This is para is being replaced by react.render(element) from the js File </p>
+    <!-- Refresh the page and observe this para will be visible for a fraction of second -->
+</div>
+<div id="Container2">
+    <h1>Bottom of the Root div</h1>
+</div>
+<!-- Container2 can't be effected the React as it doesnt get involved in the React js -->
+<!-- So we can say that React can work for only some part of the code,i.e., React is JS Library not a full fledged " Frame work " -->
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>  
+<!-- These files must be before the index.js  File   -->
+</body>
+<script src="index.js"></script>
+</html>

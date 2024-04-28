@@ -1,0 +1,144 @@
+#root {
+  align-items: center;
+  padding: 4px;
+}
+
+.header {
+  text-align: center;
+  z-index: 1;
+  background-color: #fff;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  box-shadow: 0 4px 6px #0000001a;
+}
+
+.nav-items {
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+}
+
+.nav-items ul {
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: auto;
+  list-style: none;
+  display: flex;
+}
+
+ul li {
+  margin: 8px;
+}
+
+.res-img {
+  border-radius: 16px;
+  align-items: center;
+  height: 220px;
+}
+
+.Home {
+  flex-flow: wrap;
+  justify-content: space-between;
+  display: flex;
+}
+
+.logo {
+  height: 100px;
+}
+
+.Content {
+  overflow: hidden;
+}
+
+.Item1 {
+  align-items: left;
+  border-radius: 16px;
+  flex-direction: column;
+  width: 270px;
+  margin: 3px;
+  padding: 5px;
+  transition: transform .3s ease-in-out;
+  display: flex;
+}
+
+.Content:hover {
+  overflow: initial;
+}
+
+.Item1:hover {
+  cursor: pointer;
+  background-color: #f0f0f0;
+  overflow: hidden;
+  transform: scale(1.1);
+}
+
+.Content {
+  padding-left: 5px;
+}
+
+.Home {
+  margin: auto;
+}
+
+body {
+  width: 98vw;
+  height: 100vh;
+}
+
+.Btn {
+  border: 0;
+  border-radius: 5px;
+  padding: 8px;
+  transition: transform .3s;
+}
+
+.Btn:hover {
+  cursor: pointer;
+  background-color: #c66d2e;
+  box-shadow: 0 4px 6px #ddd7d71a;
+}
+
+.LoaderContainer {
+  margin: top 50px;
+  flex-flow: wrap;
+  justify-content: space-between;
+  display: flex;
+}
+
+.Loader {
+  background-color: #b9b6b6;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 270px;
+  height: 350px;
+  margin: 10px;
+  display: flex;
+}
+
+.ImageCont {
+  background-color: #c7c3c3;
+  border-radius: 10px;
+  width: 260px;
+  height: 200px;
+  margin: 8px;
+}
+
+.Login {
+  border: 0;
+  border-radius: 5px;
+  padding: 0 12px;
+}
+
+.Login:hover {
+  cursor: pointer;
+}
+
+.Searchinput {
+  color: red;
+}
+/*# sourceMappingURL=index.69853006.css.map */
